@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="220dp"
+    android:layout_height="277dp"
+    android:layout_marginStart="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/stroke_light_green_7dp">
+
+    <ImageView
+        android:id="@+id/imgGood"
+        android:layout_width="199dp"
+        android:layout_height="145dp"
+        android:src="@drawable/ground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/featuredKid"
+        android:layout_width="199dp"
+        android:layout_height="145dp"
+        android:src="@drawable/yoga_kid"
+        app:layout_constraintBottom_toBottomOf="@+id/imgGood"
+        app:layout_constraintEnd_toEndOf="@+id/imgGood"
+        app:layout_constraintStart_toStartOf="@+id/imgGood"
+        app:layout_constraintTop_toTopOf="@+id/imgGood" />
+
+    <TextView
+        android:id="@+id/featuredName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Bikram yoga"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgGood" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/featuredCheckbox"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:checked="true"
+        android:backgroundTint="@null"
+
+        android:background="@drawable/stroke_light_green_6dp"
+        android:button="@drawable/checkbox_selector"
+        app:layout_constraintStart_toEndOf="@+id/featuredName"
+        app:layout_constraintTop_toBottomOf="@+id/imgGood" />
+
+    <TextView
+        android:id="@+id/featuredDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="12 Lessons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featuredName" />
+
+    <TextView
+        android:id="@+id/featuredDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="|"
+        app:layout_constraintStart_toEndOf="@+id/featuredDescription"
+        app:layout_constraintTop_toBottomOf="@+id/featuredName" />
+
+    <TextView
+        android:id="@+id/featuredDescription3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Begineer"
+        app:layout_constraintStart_toEndOf="@+id/featuredDescription2"
+        app:layout_constraintTop_toBottomOf="@+id/featuredName" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="25dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featuredDescription">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_a" />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/icons_b" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/icons_c" />
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/icons_d" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/peopleLoved"
+        android:layout_width="84dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="5dp"
+        android:text="123,45 people Loved it"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/featuredDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton2"
+        android:layout_width="198dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yoga"
+        android:text="Start Training"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peopleLoved"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

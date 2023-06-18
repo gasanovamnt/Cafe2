@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cafe</string>
+    <string name="name_coffee">Мокачино тройной</string>
+    <string name="recommendation">Рекомендации</string>
+    <string name="decr_coffee">Кофе свежемолотый, сливки, молоко, сахар, натуральный какао</string>
+    <string name="price_coffee">450 ₽</string>
+    <string name="add_to_order">Добавить в заказ</string>
+    <string name="plus">+</string>
+</resources>
